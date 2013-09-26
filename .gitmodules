@@ -13,3 +13,6 @@
 [submodule "bundle/emmet-vim"]
 	path = bundle/emmet-vim
 	url = https://github.com/mattn/emmet-vim.git
+[submodule "bundle/vim-easymotion"]
+	path = bundle/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git

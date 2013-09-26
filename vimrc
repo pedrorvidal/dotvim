@@ -1,8 +1,8 @@
 set nocompatible
 
-"source $VIMRUNTIME/vimrc_example.vim
+source $VIMRUNTIME/vimrc_example.vim
 
-"source $VIMRUNTIME/mswin.vim
+source $VIMRUNTIME/mswin.vim
 
 behave mswin
 
@@ -207,9 +207,7 @@ autocmd GUIEnter * set visualbell t_vb=
 
      " ignore these list file extensions
 
-     set wildignore=*.dll,*.o,*.obj,*.bak,*.exe,*.pyc,
-
-                     \*.jpg,*.gif,*.png
+     set wildignore=*.dll,*.o,*.obj,*.bak,*.exe,*.pyc,*.jpg,*.gif,*.png
 
      set wildmode=list:longest " turn on wild mode huge list
 
@@ -497,7 +495,7 @@ autocmd GUIEnter * set visualbell t_vb=
 
          au BufRead,BufNewFile *.notes set nocursorline
 
-         au BufRead,BufNewFile *.notes set guifont=Monaco:h9
+         au BufRead,BufNewFile *.notes set guifont=Monaco 9
 
          au BufRead,BufNewFile *.notes set spell
 
@@ -519,7 +517,7 @@ autocmd GUIEnter * set visualbell t_vb=
 
          set columns=180 " perfect size for me
 
-         set guifont=Monaco:h9 " My favorite font
+         set guifont=Monaco\ 9 " My favorite font
 
          " set guifont=Monaco:h10 " My favorite font
 
@@ -545,9 +543,9 @@ autocmd GUIEnter * set visualbell t_vb=
 
          "map <F9> <ESC>:set guifont=Consolas:h10<CR>
 
-         map <F10> <ESC>:set guifont=Monaco:h9<CR>
+         map <F10> <ESC>:set guifont=Monaco 9<CR>
 
-         map <F11> <ESC>:set guifont=Consolas:h10<CR>
+         map <F11> <ESC>:set guifont=Consolas 10<CR>
 
          "map <F12> <ESC>:set guifont=Consolas:h20<CR>
 
@@ -775,15 +773,11 @@ augroup END
 
 " --------------- Configuraушes de COR de acordo com diretзrio ----
 
-":autocmd BufEnter * if match(expand('%:p:h'),'trajano_leiloes')>=0 | colorscheme mint | else | colorscheme  night | end
-
-":autocmd BufEnter * if match(expand('%:p:h'),'trajano/')>=0 | colorscheme oceandeep 
 
 
 
 " --------------- Editar vimrc em nova aba
 
 nmap <leader>v :tabedit $MYVIMRC<CR>
-command! Status echo "All systems are go!"
 
 
