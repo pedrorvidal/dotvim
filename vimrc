@@ -6,6 +6,7 @@ source $VIMRUNTIME/mswin.vim
 
 behave mswin
 
+execute pathogen#infect()
 
 
 set diffexpr=MyDiff()
