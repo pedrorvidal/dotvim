@@ -4,7 +4,7 @@ source $VIMRUNTIME/vimrc_example.vim
 
 source $VIMRUNTIME/mswin.vim
 
-behave mswin
+" behave mswin
 
 execute pathogen#infect()
 
@@ -495,7 +495,7 @@ autocmd GUIEnter * set visualbell t_vb=
 
          au BufRead,BufNewFile *.notes set nocursorline
 
-         au BufRead,BufNewFile *.notes set guifont=Monaco 9
+         au BufRead,BufNewFile *.notes set guifont=Monaco\ 9
 
          au BufRead,BufNewFile *.notes set spell
 
@@ -543,9 +543,9 @@ autocmd GUIEnter * set visualbell t_vb=
 
          "map <F9> <ESC>:set guifont=Consolas:h10<CR>
 
-         map <F10> <ESC>:set guifont=Monaco 9<CR>
+         map <F10> <ESC>:set guifont=Monaco\ 9<CR>
 
-         map <F11> <ESC>:set guifont=Consolas 10<CR>
+         map <F11> <ESC>:set guifont=Consolas\ 10<CR>
 
          "map <F12> <ESC>:set guifont=Consolas:h20<CR>
 
