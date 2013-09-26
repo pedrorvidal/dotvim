@@ -745,27 +745,18 @@ autocmd VimEnter * wincmd p
 
 "MRU configuration 
 
-set viewoptions-=options
-
-augroup vimrc
-
-    autocmd BufWritePost *
-
-    \   if expand('%') != '' && &buftype !~ 'nofile'
-
-    \|      mkview
-
-    \|  endif
-
-    autocmd BufRead *
-
-    \   if expand('%') != '' && &buftype !~ 'nofile'
-
-    \|      silent loadview
-
-    \|  endif
-
-augroup END
+" set viewoptions-=options
+" 
+" augroup vimrc
+"     autocmd BufWritePost *
+"     \   if expand('%') != '' && &buftype !~ 'nofile'
+"     \|      mkview
+"     \|  endif
+"     autocmd BufRead *
+"     \   if expand('%') != '' && &buftype !~ 'nofile'
+"     \|      silent loadview
+"     \|  endif
+" augroup END
 
 
 
