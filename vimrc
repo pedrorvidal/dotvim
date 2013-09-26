@@ -783,4 +783,6 @@ augroup END
 " --------------- Editar vimrc em nova aba
 
 nmap <leader>v :tabedit $MYVIMRC<CR>
+command! Status echo "All systems are go!"
+
 
