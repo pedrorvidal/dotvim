@@ -1,8 +1,8 @@
 set nocompatible
 
-source $VIMRUNTIME/vimrc_example.vim
+"source $VIMRUNTIME/vimrc_example.vim
 
-source $VIMRUNTIME/mswin.vim
+"source $VIMRUNTIME/mswin.vim
 
 behave mswin
 
@@ -651,7 +651,7 @@ imap <leader><tab> <C-x><C-o>
 
 "Change zen coding plugin expansion key to shift + e
 
-let g:user_zen_expandabbr_key = '<C-e>'
+let g:user_emmet_expandabbr_key = '<C-e>'
 
 
 
