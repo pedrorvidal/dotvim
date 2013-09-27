@@ -772,6 +772,6 @@ autocmd VimEnter * wincmd p
 nmap <leader>v :tabedit $MYVIMRC<CR>
 
 " -------------- Para ler vimrc locais e setar diferentes colorschemes
-if filereadable(glob("~/.vimrc.local")) 
-    source ~/.vimrc.local
+if filereadable('.vimrc.local')
+    source .vimrc.local
 endif
