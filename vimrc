@@ -145,7 +145,11 @@ autocmd GUIEnter * set visualbell t_vb=
 
  " General {
 
-     filetype plugin indent on " load filetype plugins/indent settings
+     filetype plugin indent on
+     if has("autocmd")
+         filetype plugin indent on " load filetype plugins/indent settings
+     endif
+     autocmd FileType php set smartindent
 
      set smartindent
 
@@ -669,7 +673,7 @@ map <leader>c <c-_><c-_>
 
 		" Shortcut for reloading snippets, useful when developing
 
-		nnoremap ,smr <esc>:exec ReloadAllSnippets()<cr>
+		" nnoremap ,smr <esc>:exec ReloadAllSnippets()<cr>
 
 	" }
 
