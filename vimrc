@@ -394,7 +394,6 @@ autocmd VimEnter * wincmd p
 
 " --------------- Editar vimrc em nova aba
 nmap <leader>v :tabedit $MYVIMRC<CR>
-nmap <leader>s :UltiSnipsEdit<CR>
 
 
 " -------------- Para ler vimrc locais e setar diferentes colorschemes
