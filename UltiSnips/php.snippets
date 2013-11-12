@@ -19,6 +19,9 @@ snippet cmi "close comment with id" i
 <!-- #${1:class or id} -->
 endsnippet
 
+snippet bullet "Bullet for lists" i
+&bull;
+endsnippet
 # ------------------------------------------------ PHP Utils ------------------------------------------------
 snippet str_replace "str_replace($search, $replace, $subject)" i
 str_replace(${1:$search}, ${2:replace}, ${3:subject});
@@ -94,6 +97,16 @@ if (isset($${1:var}));
 endsnippet
 
 # ------------------------------------------------ Codeigniter utils ------------------------------------------------
+snippet df "document function" i
+/*
+* Função	${1:Descrição da função}
+* @author	Pedro Vidal <pedro@rage.com.br>
+* @name		${2:nome}
+* @params	${3:parâmetros}
+* @return	${4:return}
+*/
+endsnippet
+
 snippet cisetvalue "ci set value" i
 <?php echo set_value('${1}'); ?>
 endsnippet
