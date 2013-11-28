@@ -17,6 +17,14 @@ snippet getextension "get file extension from a string" i
 $extension = substr(strrchr(${1:file_name},'.'),1);
 endsnippet
 
+snippet pinclude "php include" i
+<?php include(${1:file}); ?>
+endsnippet
+
+snippet iphp "inline php" i
+<?php ${1} ?>${2}
+endsnippet
+
 snippet ccm "close comment" i
 <!-- ${1:class or id} -->
 endsnippet
