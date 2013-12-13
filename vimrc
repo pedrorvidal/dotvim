@@ -357,7 +357,7 @@ nmap <C-l> <C-w>l
 "------------------------"
 "Shortcut for NERDTreeToggle
 "nmap <leader>nt :NERDTreeToggle <CR>
-map <F2> :NERDTreeToggle<CR>
+" map <F2> :NERDTreeToggle<CR>
 
 "set toggle wrap
 :map <F3> :set nowrap! <CR>
@@ -400,3 +400,20 @@ nmap <leader>v :tabedit $MYVIMRC<CR>
 if filereadable('.vimrc.local')
     source .vimrc.local
 endif
+
+" modify selected text using combining diacritics
+command! -range -nargs=0 Overline        call s:CombineSelection(<line1>, <line2>, '0305')
+command! -range -nargs=0 Underline       call s:CombineSelection(<line1>, <line2>, '0332')
+command! -range -nargs=0 DoubleUnderline call s:CombineSelection(<line1>, <line2>, '0333')
+command! -range -nargs=0 Strikethrough   call s:CombineSelection(<line1>, <line2>, '0336')
+
+function! s:CombineSelection(line1, line2, cp)
+  execute 'let char = "\u'.a:cp.'"'
+  execute a:line1.','.a:line2.'s/\%V[^[:cntrl:]]/&'.char.'/ge'
+endfunction
+
+" vnoremap OO :Overline<CR>
+" vnoremap OOU:Underline<CR>
+" vnoremap DUN :DoubleUnderline<CR>
+vnoremap OO :Strikethrough<CR>
+
