@@ -417,3 +417,6 @@ endfunction
 " vnoremap DUN :DoubleUnderline<CR>
 vnoremap OO :Strikethrough<CR>
 
+" ----------------- Conf. CTRL P
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
