@@ -266,7 +266,7 @@ autocmd GUIEnter * set visualbell t_vb=
  " GUI Settings {
  if has("gui_running")
      " Basics {
-         colorscheme night " my color scheme (only works in GUI)
+         colorscheme molokai " my color scheme (only works in GUI)
          set columns=180 " perfect size for me
          set guifont=Monaco\ 9 " My favorite font
          " set guifont=Monaco:h10 " My favorite font
