@@ -141,7 +141,7 @@ autocmd GUIEnter * set visualbell t_vb=
      set showcmd " show the command being typed
      set showmatch " show matching brackets
      set sidescrolloff=10 " Keep 5 lines at the size
-     set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
+     " set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
      "              | | | | |  |   |      |  |     |    |
      "              | | | | |  |   |      |  |     |    + current
      "              | | | | |  |   |      |  |     |       column
@@ -256,7 +256,9 @@ autocmd GUIEnter * set visualbell t_vb=
          au BufRead,BufNewFile *.notes set syntax=notes
          au BufRead,BufNewFile *.notes set nocursorcolumn
          au BufRead,BufNewFile *.notes set nocursorline
-         au BufRead,BufNewFile *.notes set guifont=Monaco\ 9
+         " au BufRead,BufNewFile *.notes set guifont=Monaco\ 9
+         " au BufRead,BufNewFile *.notes set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 11
+         au BufRead,BufNewFile *.notes set guifont=Sauce\ Code\ Powerline\ Regular\ 10
          au BufRead,BufNewFile *.notes set spell
      " }
      au BufNewFile,BufRead *.ahk setf ahk 
@@ -268,8 +270,10 @@ autocmd GUIEnter * set visualbell t_vb=
      " Basics {
          colorscheme molokai " my color scheme (only works in GUI)
          set columns=180 " perfect size for me
-         set guifont=Monaco\ 9 " My favorite font
          " set guifont=Monaco:h10 " My favorite font
+         " set guifont=Monaco\ 9 " My favorite font
+         " set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 11
+         set guifont=Sauce\ Code\ Powerline\ Regular\ 10
          "set guioptions=ce 
          "              ||
          "              |+-- use simple dialogs rather than pop-ups
@@ -281,8 +285,8 @@ autocmd GUIEnter * set visualbell t_vb=
      " Font Switching Binds {
          "map <F8> <ESC>:set guifont=Consolas:h8<CR>
          "map <F9> <ESC>:set guifont=Consolas:h10<CR>
-         map <F10> <ESC>:set guifont=Monaco\ 9<CR>
-         map <F11> <ESC>:set guifont=Consolas\ 10<CR>
+         " map <F10> <ESC>:set guifont=Monaco\ 9<CR>
+         " map <F11> <ESC>:set guifont=Consolas\ 10<CR>
          "map <F12> <ESC>:set guifont=Consolas:h20<CR>
      " }
  endif
@@ -424,3 +428,8 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-t>'],
     \ 'AcceptSelection("t")': ['<cr>', '<2-LeftMouse>'],
     \ }
+
+" Configurações vim-airline
+set t_Co=256
+let g:airline_powerline_fonts=1
+
