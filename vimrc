@@ -43,6 +43,9 @@ execute pathogen#infect()
 set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 
+" Open each new buffer in a new tab
+:au BufAdd,BufNewFile * nested tab sball
+
  " Basics {
     "set nocompatible " explicitly get out of vi-compatible mode
     "Pathogen
