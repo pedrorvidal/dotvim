@@ -170,7 +170,7 @@ endsnippet
 
 # ------------------------------------------------ Wordpress utils ---------------------------------------------
 snippet bloginfo "wp echo bloginfo" i
-<?php echo bloginfo('${1}'); ?>
+<?php bloginfo('${1}'); ?>
 endsnippet
 
 snippet pthe_title "wp echo the_title" i
@@ -203,4 +203,14 @@ endsnippet
 
 snippet postthumbsrc "wp get post thumbnail src" i
 $imgsrc = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );${1}
+endsnippet
+
+snippet form "html form" i
+<form action="${1}" method="${2:POST}">${3}
+</form>
+endsnippet
+
+snippet formup "html form para upload" i
+<form action="${1}" method="${2:POST}" enctype="${3:multipart/form-data}">${4}
+</form>
 endsnippet
