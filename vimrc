@@ -4,6 +4,7 @@ source $VIMRUNTIME/mswin.vim
 " behave mswin
 execute pathogen#infect()
 " set diffexpr=MyDiff()
+" adicionei uma linha
 
 " function MyDiff()
 "   let opt = '-a --binary '
