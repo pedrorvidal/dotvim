@@ -45,7 +45,7 @@ set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
 
 " Open each new buffer in a new tab
-:au BufAdd,BufNewFile * nested tab sball
+" :au BufAdd,BufNewFile * nested tab sball
 
  " Basics {
     "set nocompatible " explicitly get out of vi-compatible mode
@@ -402,6 +402,9 @@ autocmd VimEnter * wincmd p
 
 " --------------- Editar vimrc em nova aba
 nmap <leader>v :tabedit $MYVIMRC<CR>
+
+"edit snippets in a new tab
+noremap <leader>vs :tab sp <bar> UltiSnipsEdit<CR>
 
 
 " -------------- Para ler vimrc locais e setar diferentes colorschemes

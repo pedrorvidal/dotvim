@@ -205,6 +205,18 @@ snippet postthumbsrc "wp get post thumbnail src" i
 $imgsrc = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );${1}
 endsnippet
 
+snippet postmeta "get_post_meta( $post_id, $key, $single );"
+get_post_meta( ${1:post_id}, ${2:$key}, ${3:$single:false} );
+endsnippet
+
+snippet wptemplate "bloginfo('template_url')" i
+bloginfo('template_url');
+endsnippet
+
+snippet iphp "inline php tag" i
+<?php ${1} ?>
+endsnippet
+
 snippet form "html form" i
 <form action="${1}" method="${2:POST}">${3}
 </form>
