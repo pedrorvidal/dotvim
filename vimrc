@@ -262,8 +262,21 @@ autocmd GUIEnter * set visualbell t_vb=
          au BufRead,BufNewFile *.notes set nocursorline
          " au BufRead,BufNewFile *.notes set guifont=Monaco\ 9
          " au BufRead,BufNewFile *.notes set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 11
-         au BufRead,BufNewFile *.notes set guifont=Sauce\ Code\ Powerline\ Regular\ 10
+         " au BufRead,BufNewFile *.notes set guifont=Sauce\ Code\ Powerline\ Regular\ 10
          au BufRead,BufNewFile *.notes set spell
+        if has("win32")
+            " WINDOWS
+            au BufRead,BufNewFile *.notes set guifont="Sauce Code Powerline Regular":h11
+        endif
+        if has("unix")
+            if system('uname')=~'Darwin'
+                " MAC
+                au BufRead,BufNewFile *.notes set guifont=Sauce\ Code\ Powerline:h11
+            else
+                " LINUX
+                au BufRead,BufNewFile *.notes set guifont=Sauce\ Code\ Powerline\ Regular\ 11
+            endif
+        endif
      " }
      au BufNewFile,BufRead *.ahk setf ahk 
  " }
@@ -277,7 +290,21 @@ autocmd GUIEnter * set visualbell t_vb=
          " set guifont=Monaco:h10 " My favorite font
          " set guifont=Monaco\ 9 " My favorite font
          " set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 11
-         set guifont=Sauce\ Code\ Powerline\ Regular\ 10
+         " set guifont=Sauce\ Code\ Powerline\ Regular\ 10
+
+        if has("win32")
+            " WINDOWS
+            set guifont="Sauce Code Powerline Regular":h11
+        endif
+        if has("unix")
+            if system('uname')=~'Darwin'
+                " MAC
+                set guifont=Sauce\ Code\ Powerline:h11
+            else
+                " LINUX
+                set guifont=Sauce\ Code\ Powerline\ Regular\ 11
+            endif
+        endif
          "set guioptions=ce 
          "              ||
          "              |+-- use simple dialogs rather than pop-ups
