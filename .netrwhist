@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/opt/lampp/htdocs/cartao'
 let g:netrw_dirhist_2='/opt/lampp/htdocs/cartao/js'
 let g:netrw_dirhist_3='/opt/lampp/htdocs/loucura'
+let g:netrw_dirhist_4='/Users/pedro/.vim/.git/modules'
+let g:netrw_dirhist_5='/Users/pedro/.vim/.git/modules/bundle'

@@ -34,3 +34,6 @@
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/bling/vim-airline.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = https://github.com/pedrorvidal/matchit.git
