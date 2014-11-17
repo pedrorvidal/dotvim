@@ -266,15 +266,15 @@ autocmd GUIEnter * set visualbell t_vb=
          au BufRead,BufNewFile *.notes set spell
         if has("win32")
             " WINDOWS
-            au BufRead,BufNewFile *.notes set guifont="Sauce Code Powerline Regular":h11
+            au BufRead,BufNewFile *.notes set guifont="Sauce Code Powerline Regular":h13
         endif
         if has("unix")
             if system('uname')=~'Darwin'
                 " MAC
-                au BufRead,BufNewFile *.notes set guifont=Sauce\ Code\ Powerline:h11
+                au BufRead,BufNewFile *.notes set guifont=Sauce\ Code\ Powerline:h13
             else
                 " LINUX
-                au BufRead,BufNewFile *.notes set guifont=Sauce\ Code\ Powerline\ Regular\ 11
+                au BufRead,BufNewFile *.notes set guifont=Sauce\ Code\ Powerline\ Regular\ 13
             endif
         endif
      " }
@@ -294,15 +294,15 @@ autocmd GUIEnter * set visualbell t_vb=
 
         if has("win32")
             " WINDOWS
-            set guifont="Sauce Code Powerline Regular":h11
+            set guifont="Sauce Code Powerline Regular":h13
         endif
         if has("unix")
             if system('uname')=~'Darwin'
                 " MAC
-                set guifont=Sauce\ Code\ Powerline:h11
+                set guifont=Sauce\ Code\ Powerline:h13
             else
                 " LINUX
-                set guifont=Sauce\ Code\ Powerline\ Regular\ 11
+                set guifont=Sauce\ Code\ Powerline\ Regular\ 13
             endif
         endif
          "set guioptions=ce 
