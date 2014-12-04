@@ -395,10 +395,10 @@ nmap <C-l> <C-w>l
 " map <F2> :NERDTreeToggle<CR>
 
 "set toggle wrap
-:map <F3> :set nowrap! <CR>
+:map <F4> :set nowrap! <CR>
 
 "Show hidden files in NerdTree
-let NERDTreeShowHidden=1
+" let NERDTreeShowHidden=1
 
 " -------------------- Opções NERDTREE Editadas por mim -------------
 " tab navigation like firefox
@@ -412,7 +412,7 @@ let NERDTreeShowHidden=1
 :imap <C-t> <Esc>:tabnew :NERDTree<CR>
 "autopen NERDTree and focus cursor in new document
 " autocmd VimEnter * NERDTree H:/
-autocmd VimEnter * wincmd p
+" autocmd VimEnter * wincmd p
 
 "MRU configuration 
 " set viewoptions-=options
@@ -431,7 +431,7 @@ autocmd VimEnter * wincmd p
 nmap <leader>v :tabedit $MYVIMRC<CR>
 
 "edit snippets in a new tab
-noremap <leader>vs :tab sp <bar> UltiSnipsEdit<CR>
+noremap <leader>w :tab sp <bar> UltiSnipsEdit<CR>
 
 
 " -------------- Para ler vimrc locais e setar diferentes colorschemes
